@@ -1,5 +1,5 @@
 # Webdesign Workshop
-A dutch webdesign workshop for kids: <a href="http://www.hannemaes.be/bazandpoort/workshop-webdesign/">www.hannemaes.be/bazandpoort/workshop-webdesign</a>
+A dutch webdesign workshop for kids: <a href="http://www.hannemaes.be/bazandpoort/workshop-webdesign/" target="_blank">www.hannemaes.be/bazandpoort/workshop-webdesign</a>
 
 <img src="https://github.com/HanneMaes/webdesignWorkshop/blob/master/assets/header.png">
 
