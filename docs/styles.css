@@ -3,13 +3,23 @@
   --spacing: 50px;
 }
 
+::selection {
+  background-color: var(--color);
+  color: black;
+}
+
 body {
   color: rgb( 150, 150, 150);
   font-size: 25px;
   font-family: 'Josefin Sans', sans-serif;
+  overflow-x: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+
+.pageContent {
   padding-left: var(--spacing);
   padding-right: var(--spacing);
-  overflow-x: hidden;
 }
 
 a {
@@ -38,7 +48,12 @@ p, pre, .row, ul, ol {
 }
 
 ul, ol {
-  padding:0
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+li {
+  margin-bottom: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -52,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   font-size: 60px;
-  margin-top: 500px;
+  margin-top: 200px;
   background-color: var(--color);
 }
 
@@ -104,11 +119,26 @@ h1 {
 }
 
 /****************************************************************************************************************************************************/
-/* buttons & links */
+/* inhouds tafel */
 
-/*.btn {
-  display: block;
-}*/
+.inhoudstabel {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.inhoudstabel a {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+  box-shadow: none;
+}
+
+.subMenu {
+  padding-left: 0px;
+  margin-left: 0px;
+  font-size: 0.7em;
+  margin: 0px;
+  list-style: none;
+}
 
 /****************************************************************************************************************************************************/
 /* images */
@@ -149,8 +179,10 @@ pre {
 /* flex box */
 
 .column {
+  width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .row {

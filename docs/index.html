@@ -49,85 +49,44 @@
   <!-- cover links -->
   <div class="coverLinks">
 	  <div class="column">
-		<a class="coverLinksLink" target="_blank" href="https://www.google.com/imghp?hl=EN"> Google </a>
-		<a class="coverLinksLink" target="_blank" href="https://giphy.com/"> Giphy </a>
-	  </div>
-	  <div class="column">
-		<a class="coverLinksLink" class="btn" target="_blank" href="https://www.w3schools.com/colors/colors_names.asp"> Engelse namen van kleuren </a>
-	    <a class="coverLinksLink" class="btn" target="_blank" href="https://www.webfx.com/web-design/color-picker/"> Kleur codes </a>
+      <a class="coverLinksLink" target="_blank" href="https://www.google.com/imghp?hl=EN"> Google </a>
+      <a class="coverLinksLink" target="_blank" href="https://giphy.com/"> Giphy </a>
+      <a class="coverLinksLink" class="btn" target="_blank" href="https://www.w3schools.com/colors/colors_names.asp"> Engelse namen van kleuren </a>
+      <a class="coverLinksLink" class="btn" target="_blank" href="https://www.webfx.com/web-design/color-picker/"> Kleur codes </a>
 	  </div>
 	</div> 
 </div> 
 
-<section>
+<section class="pageContent">
 
-<!-- stap 1 -->
-<!-- <h2>Stap 1 &#x1F947</h2>
+  <!-- inhoud -->
+  <h2>Inhoud</h2>
+  <ol class="inhoudstabel">
+    <li><a href="#stap1Anchor">&#x1F4AA Aanpassingen maken</a></li>
+    <ul class="subMenu">
+      <li><a href="#stap11Anchor">&#x1F58B Tekst aanpassen</a></li>
+      <li><a href="#stap12Anchor">&#x1F58D Kleuren aanpassen</a></li>
+      <li><a href="#stap13Anchor">&#x1F4F8 De afbeelding aanpassen</a></li>
+    </ul>
+    <li><a href="#stap2Anchor">&#x1F525 Maak je eigen kaart!</a></li>
+    <li><a href="#stap3Anchor">&#x1F5A5 Start van een ander codepen project</a></li>
+  </ol> 
+
+  <!-- stap 1 -->
+  <h2 id="stap1Anchor">Stap 1: Aanpassingen maken &#x1F4AA</h2>
   
-  <p>
-    Open je favoriete web browser.
-  </p>
-  <div class="row">
-    <img class="imgBrowser" width="100px" height="100px" src="images/logo-firefox.png">
-    <img class="imgBrowser" width="100px" height="100px" src="images/logo-chrome.png">
-  </div>
-
-  <p>
-    Surf naar <a target="_blank" href="https://codepen.io">Codepen.io</a>.<br>
-    Dit is een website waar je snel webdesign code mee kan schrijven en testen.
-  </p> 
-
-  <p>
-    Klik op rechtsboven op <em>Create > Pen</em>.
-  </p>
-  <img class="screenshot" width="1317px" height="986px" src="images/codepen-create.png">
-
-<!-- stap 2 --> 
-<!-- <h2>Stap 2: Eerste website &#x1F947</h2>
-  
-  <p>
-    Kopieer deze code, en plak ze in het HTML-veld van codepen.
-  </p>
-  <div class="code"><pre id="codeHtml"></pre></div>
-  <img class="screenshot" width="1317px" height="986px" src="images/codepen-html.png">
-
-  <p>
-    Met HTML-code pas je de inhoud van je website aan.
-  </p>
-
-  <p>
-    Kopieer deze code, en plak ze in het CSS-veld van codepen. 
-  </p>  
-  <div class="code"><pre id="codeCss"></pre></div>
-  <img class="screenshot" width="1317px" height="986px" src="images/codepen-css.png">
-
-  <p>
-    Met CSS pas je het design van je website aan.
-  </p>
-
-  <p>
-    Tijdens deze workshop gaan we alleen met HTML & CSS-code werken.<br>
-    Je mag het JS-veld van codepen verbergen.
-  </p>
-  <img class="screenshot" width="1317px" height="986px" src="images/codepen-no-js.png">
-
-  <h4><em>Proficiat je hebt net je eerste website gemaakt! &#x1F389</em></h4>
-
-  <!-- stap 3 -->
-  <h2>Stap 1: Aanpassingen maken &#x1F4AA</h2>
-  
-  <h3>Tekst aanpassen</h3>
+  <h3 id="stap11Anchor">Tekst aanpassen</h3>
   <p>
     Om tekst aan te passen zoek je deze in de HTML-code en pas je ze aan.<br>
-    De tekst van een website behoord tot de structuur van de website en staat daarom in onze HTML-code.
+    De <em>tekst</em> van een website behoord tot de <em>structuur</em> van de website en staat daarom in onze <em>HTML-code</em>.
   </p>
   <img class="screenshot" width="1317px" height="986px" src="images/codepen-titel-aangepassen.png">
  
-<h3>Kleuren aanpassen</h3>
+<h3 id="stap12Anchor">Kleuren aanpassen</h3>
 
   <p>
     Om kleuren aan te passen zoek je in CSS het juiste stukje code en pas je de kleur aan.<br>  
-    De kleuren van een website behoord tot het design van de website en staan daarom in onze CSS-code.
+    De <em>kleuren</em> van een website behoord tot het <em>design</em> van de website en staan daarom in onze <em>CSS-code</em>.
   </p>
   
   <p>
@@ -168,7 +127,7 @@
   </p>
   <img class="screenshot" width="1317px" height="986px" src="images/codepen-kleuren-aanpassen.png">
 
-  <h3>De afbeelding aanpassen</h3>
+  <h3 id="stap13Anchor">De afbeelding aanpassen</h3>
   <p>
     De afbeeldingen van een website behoren tot het design, om deze aan te passen moeten we dus in de CSS-code gaan zoeken.<br>
     Dit is het stukje code waar we de afbeelding kunnen veranderen.
@@ -207,31 +166,23 @@
   </p>
   <img class="screenshot" width="1317px" height="986px" src="images/codepen-andere-afbeelding.png">
 
-<!-- stap 4 -->  
-<h2>Stap 2: Maak je eigen kaart! &#x1F525</h2>
+  <h4><em>Probeer nu ook andere zaken in de code aan te passen, je zal verstelt staat van wat we nog allemaal aan kunnen passen.</em></h4>
+
+<!-- stap 2 -->  
+<h2 id="stap2Anchor">Stap 2: Maak je eigen kaart! &#x1F525</h2>
 
   <p>
     Nu je weet hoe je alles kan aanpassen, is het tijd om je eigen kaarten te gaan programmeren!<br>
     Het moet geen verjaardagskaart zijn, laat je fantasie de vrije loop en verzin een zo origineel mogelijke kaart.
   </p>
   <ul>
-    <li>Een postkaart van je laatste reis. &#x2708 </li>
+    <li>Een postkaart van je laatste reis. &#x1F9F3</li>
     <li>Een uitnodiging voor een groot feest. &#x1F389</li>
     <li>Een verzamelkaart. &#x1F3B2 </li>
-    <li>Een spelkaart. &#x2660 </li>
   </ul>
 
-  <h4><em>Probeer ook andere zaken in de code aan te passen, je zal verstelt staat van wat we nog allemaal aan kunnen passen.</em></h4>
-
-<!-- stap 5 --> 
-<!-- <h2>Stap 3: Bewaar je kaart. &#x1F4BF</h2>
-
-  <p>
-    Als je klaar bent roep je één van de begeleiders, en zij zullen je helpen je kaart op te slaan.
-  </p> -->
-
-<!-- stap 6 -->
-<h2>Stap 3: Start van een ander codepen project</h2>
+<!-- stap 3 -->
+<h2 id="stap3Anchor">Stap 3: Start van een ander codepen project &#x1F5A5</h2>
 
   <p>
     Wil je eens iets anders proberen aan te passen dan een kaart?<br>
@@ -239,7 +190,7 @@
   </p>
 
   <p>
-    Zoek je project dat je leuk lijkt. &#x1F525
+    Zoek een project dat je leuk lijkt. &#x1F525
     <img class="screenshot" width="1317px" height="986px" src="images/codepen-projects.png">
   </p>
 
@@ -249,7 +200,11 @@
   <img class="screenshot" width="1317px" height="986px" src="images/codepen-edit-other-project.png">
 
 <!-- the end -->
-<h4><em>Veel code plezier! &#x1F4BB</em></h4>
+<h4><em>Veel programmeer plezier! &#x1F4BB</em></h4>
+
+<p>
+  <img src="images/youdidit.jpg">
+</p>
 
 </section>
 
