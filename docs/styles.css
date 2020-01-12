@@ -1,6 +1,7 @@
 :root {
   --color: yellow;
   --spacing: 50px;
+  --spacingMobile: 20px;
 }
 
 ::selection {
@@ -15,11 +16,6 @@ body {
   overflow-x: hidden;
   padding: 0px;
   margin: 0px;
-}
-
-.pageContent {
-  padding-left: var(--spacing);
-  padding-right: var(--spacing);
 }
 
 a {
@@ -63,6 +59,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   letter-spacing: 3px;
   word-spacing: 10px;
+  padding-left: var(--spacing);
+  padding-right: var(--spacing);
 }
 
 h2 {
@@ -145,15 +143,17 @@ h1 {
 
 img {
   display: block;
+  margin: 0;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+  max-width: 100%;
+  height: auto;
 }
 
 .imgBrowser {
   margin: 20px;
 }
-
-/*.screenshot {
- display: blocinlinek;
-} */
 
 /****************************************************************************************************************************************************/
 /* code */
@@ -183,9 +183,70 @@ pre {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: flex-end;
 }
 
 .row {
   display: flex;
   flex-direction: row;
+}
+
+/****************************************************************************************************************************************************/
+/* mobile */
+/****************************************************************************************************************************************************/
+
+@media only screen and (max-width: 700px) {
+
+  body {
+    font-size: 17px;
+  }
+
+  p {
+    line-height: 25px;
+    margin-left: var(--spacingMobile) !important;
+    margin-right: var(--spacingMobile);
+    margin-top: var(--spacingMobile);
+    margin-bottom: var(--spacingMobile);
+  }
+
+  ul, ol {
+    margin-left: var(--spacingMobile) !important;
+  }
+
+  li {
+    margin-bottom: 0;
+  }
+
+  .cover a {
+    font-size: 30px;
+  }
+
+  .coverLinksLink {
+    font-size: 15px !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 1px;
+    word-spacing: 0;
+    margin-left: 0;
+    padding-left: var(--spacingMobile);
+    padding-right: var(--spacingMobile);
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin-top: 100px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  .inhoudstabel {
+    margin-left: 0 !important;
+  }
 }
