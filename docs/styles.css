@@ -78,6 +78,27 @@ h4 {
 }
 
 /****************************************************************************************************************************************************/
+/* hanne maes */
+
+.hannemaesContainer {
+  width: 100vw;
+  text-align: right;
+  font-size: 13px;
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+  padding: 10px;
+}
+
+.hannemaesLink {
+  font-size: 17px !important;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 5px !important;
+  margin-left: 0;
+  box-shadow: none !important;
+}
+
+/****************************************************************************************************************************************************/
 /* cover */
 
 .cover {
