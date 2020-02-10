@@ -100,20 +100,56 @@ h1 {
   display: inline;
 }
 
-.coverLinks {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.coverLinksLink {
-  font-size: 35px !important;	
-}
-
 .cover a {
   font-size: 50px;
   margin: 20px;
+}
+
+/****************************************************************************************************************************************************/
+/* animating arrow */
+
+.arrowContainer { /* so the animation does not push the rest of the content */
+  height: 150px;
+  width: 100px;
+  cursor: pointer;
+
+  /* so we can put the arrow at the bottom of this div */
+  position: relative;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+
+  /* put this at the bottom of the parent div */
+  position:absolute;
+  bottom:0px;
+
+  /* animation */
+  animation-name: arrowAnim;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transition-timing-function: ease-out;
+}
+
+@keyframes arrowAnim {
+  0% { 
+    margin-bottom: 100px;
+    border-width: 0 0px 0px 0;
+    opacity: 0;
+  } 80% {
+    margin-bottom: 10px;
+    border-width: 0 5px 5px 0;
+    opacity: 1;
+  } 100% {
+    margin-bottom: 0px;
+    border-width: 0 0px 0px 0;
+    opacity: 0;
+  }
 }
 
 /****************************************************************************************************************************************************/
@@ -219,10 +255,6 @@ pre {
 
   .cover a {
     font-size: 30px;
-  }
-
-  .coverLinksLink {
-    font-size: 15px !important;
   }
 
   h1, h2, h3, h4, h5, h6 {
